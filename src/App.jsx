@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, Navigate } from 'react-router-dom';
 import Header from './Header';
 import HeroBooking from './HeroBooking';
 import FleetShowcase from './FleetShowcase';
@@ -11,10 +11,15 @@ import Footer from './Footer';
 import VehicleModal from './VehicleModal';
 import WhatsAppFab from './WhatsAppFab';
 import ManajemenArmada from './ManajemenArmada';
+import Login from './Login';
+import Register from './Register';
+import ProtectedRoute from './ProtectedRoute';
+import { useAuth, signOut } from './auth';
 
 function HomePage() {
   const [modalCar, setModalCar] = useState(null);
   const [feedback, setFeedback] = useState(false);
+  const { user } = useAuth();
 
   const handleBook = (car) => {
     const formatted = Number(car.price).toLocaleString('id-ID');
@@ -33,7 +38,7 @@ function HomePage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
+      <Header user={user} onSignOut={signOut} />
       <main>
         <HeroBooking onSearch={handleSearch} />
         <FleetShowcase onBook={handleBook} onDetail={(car) => setModalCar(car.key)} />
@@ -74,7 +79,17 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/manajemen-armada" element={<ManajemenArmada />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route
+          path="/manajemen-armada"
+          element={
+            <ProtectedRoute>
+              <ManajemenArmada />
+            </ProtectedRoute>
+          }
+        />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   );

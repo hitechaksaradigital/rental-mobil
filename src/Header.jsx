@@ -1,3 +1,4 @@
+import { Link, useNavigate } from 'react-router-dom';
 import { Logo } from './data';
 
 const NAV = [
@@ -8,12 +9,21 @@ const NAV = [
   { label: 'Bantuan & FAQ', path: 'bantuan-faq' },
 ];
 
-export default function Header() {
+export default function Header({ user, onSignOut }) {
+  const navigate = useNavigate();
+
+  const handleLogout = async () => {
+    if (onSignOut) {
+      await onSignOut();
+      navigate('/');
+    }
+  };
+
   return (
     <header className="sticky top-0 z-40 w-full bg-surface-container-lowest/95 backdrop-blur-md shadow-sm">
       <div className="w-full max-w-[1680px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-sm flex items-center justify-between gap-space-md">
         <div className="flex items-center gap-space-md">
-          <a className="flex items-center gap-space-sm" href="#">
+          <Link to="/" className="flex items-center gap-space-sm">
             <Logo className="h-8 w-auto object-contain" />
             <div className="flex flex-col">
               <span className="font-title-md text-title-md text-primary tracking-tight leading-none font-jakarta font-bold">
@@ -23,7 +33,7 @@ export default function Header() {
                 Fleet & Mobility
               </span>
             </div>
-          </a>
+          </Link>
           <nav className="hidden xl:flex items-center gap-space-lg pl-space-md">
             {NAV.map((n) => (
               <a
@@ -46,13 +56,42 @@ export default function Header() {
             <span className="material-symbols-outlined text-secondary text-[18px]">chat</span>
             <span className="font-semibold">+62 811-8356-247</span>
           </a>
-          <button
-            className="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary-container text-on-primary hover:bg-primary transition-colors font-label-sm font-label-sm font-semibold shadow-sm"
-            type="button"
-          >
-            <span className="material-symbols-outlined text-[18px]">login</span>
-            <span className="hidden sm:inline">Masuk Akun</span>
-          </button>
+          {user ? (
+            <>
+              <Link
+                to="/manajemen-armada"
+                className="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors font-label-sm font-label-sm font-semibold"
+              >
+                <span className="material-symbols-outlined text-[18px]">dashboard</span>
+                <span className="hidden sm:inline">Dashboard</span>
+              </Link>
+              <button
+                onClick={handleLogout}
+                className="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary-container text-on-primary hover:bg-primary transition-colors font-label-sm font-label-sm font-semibold shadow-sm"
+                type="button"
+              >
+                <span className="material-symbols-outlined text-[18px]">logout</span>
+                <span className="hidden sm:inline">Keluar</span>
+              </button>
+            </>
+          ) : (
+            <>
+              <Link
+                to="/login"
+                className="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors font-label-sm font-label-sm font-semibold"
+              >
+                <span className="material-symbols-outlined text-[18px]">login</span>
+                <span className="hidden sm:inline">Masuk</span>
+              </Link>
+              <Link
+                to="/register"
+                className="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary-container text-on-primary hover:bg-primary transition-colors font-label-sm font-label-sm font-semibold shadow-sm"
+              >
+                <span className="material-symbols-outlined text-[18px]">person_add</span>
+                <span className="hidden sm:inline">Daftar</span>
+              </Link>
+            </>
+          )}
         </div>
       </div>
 

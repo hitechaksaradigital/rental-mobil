@@ -1,4 +1,45 @@
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useAuth, signOut } from './auth';
+
+function getInitials(email) {
+  if (!email) return 'U';
+  const name = email.split('@')[0];
+  return name.slice(0, 2).toUpperCase();
+}
+
+function getDisplayName(user) {
+  return (
+    user?.user_metadata?.full_name ||
+    user?.user_metadata?.name ||
+    user?.email?.split('@')[0] ||
+    'Operator'
+  );
+}
+
 export default function AdminHeader() {
+  const navigate = useNavigate();
+  const { user } = useAuth();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [loggingOut, setLoggingOut] = useState(false);
+
+  const handleLogout = async () => {
+    setLoggingOut(true);
+    try {
+      await signOut();
+      navigate('/login');
+    } catch (err) {
+      alert('Gagal logout: ' + err.message);
+    } finally {
+      setLoggingOut(false);
+      setMenuOpen(false);
+    }
+  };
+
+  const displayName = getDisplayName(user);
+  const role = user?.user_metadata?.role || 'Head of Fleet Operations';
+  const initials = getInitials(user?.email);
+
   return (
     <header className="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(62,15,141,0.03)] px-space-xl flex items-center justify-between">
       <div className="flex items-center gap-space-md flex-1 max-w-xl">
@@ -34,23 +75,69 @@ export default function AdminHeader() {
           </span>
         </div>
         <div className="h-8 w-px bg-outline-variant/40" />
-        <div className="flex items-center gap-space-sm pl-space-xs cursor-pointer group">
-          <img
-            alt="Profile"
-            className="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuDmE1mOGEbS6RKbppVD-ErdUPbxqPiby7ApryHq1hoNwqIOveyPcEwU5INbF1Vde8uEboqHE_hYhqgztqwYD84c_mBOJ7RD9A-oC729eLfGBYAkAmjKHv3bi65WxthHX_jFDdSXb0vHRP_MPBLWggYGY8oZnfg0dvwEA1CfDoz5xmBypx1O5LKW491J5FiEe6ElOw8VMwd5f33TQhMDwjjheSgh9kpuYhQdsSGy86qiA1Os0F89jJ"
-          />
-          <div className="flex flex-col text-left">
-            <span className="font-label-md text-label-md text-on-surface font-semibold leading-tight group-hover:text-primary transition-colors">
-              Arya Pratama
+        <div className="relative">
+          <button
+            className="flex items-center gap-space-sm pl-space-xs cursor-pointer group"
+            onClick={() => setMenuOpen((s) => !s)}
+            type="button"
+          >
+            <div className="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-caption-xs ring-2 ring-primary-fixed">
+              {initials}
+            </div>
+            <div className="flex flex-col text-left">
+              <span className="font-label-md text-label-md text-on-surface font-semibold leading-tight group-hover:text-primary transition-colors">
+                {displayName}
+              </span>
+              <span className="font-caption-xs text-caption-xs text-on-surface-variant leading-tight">
+                {role}
+              </span>
+            </div>
+            <span className="material-symbols-outlined text-outline text-[18px] ml-space-3xs">
+              expand_more
             </span>
-            <span className="font-caption-xs text-caption-xs text-on-surface-variant leading-tight">
-              Head of Fleet Operations
-            </span>
-          </div>
-          <span className="material-symbols-outlined text-outline text-[18px] ml-space-3xs">
-            expand_more
-          </span>
+          </button>
+          {menuOpen && (
+            <div
+              className="absolute right-0 top-full mt-space-xs w-64 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container overflow-hidden z-50"
+              onMouseLeave={() => setMenuOpen(false)}
+            >
+              <div className="p-space-md border-b border-surface-container">
+                <p className="font-label-md text-label-md font-bold text-on-surface truncate">
+                  {displayName}
+                </p>
+                <p className="font-caption-xs text-caption-xs text-on-surface-variant truncate">
+                  {user?.email}
+                </p>
+              </div>
+              <div className="p-space-2xs">
+                <button
+                  className="w-full flex items-center gap-space-sm px-space-md py-space-sm rounded-lg hover:bg-surface-container-high font-label-sm text-label-sm text-on-surface"
+                  type="button"
+                >
+                  <span className="material-symbols-outlined text-[18px]">person</span>
+                  Profil Saya
+                </button>
+                <button
+                  className="w-full flex items-center gap-space-sm px-space-md py-space-sm rounded-lg hover:bg-surface-container-high font-label-sm text-label-sm text-on-surface"
+                  type="button"
+                >
+                  <span className="material-symbols-outlined text-[18px]">settings</span>
+                  Pengaturan Akun
+                </button>
+              </div>
+              <div className="border-t border-surface-container p-space-2xs">
+                <button
+                  className="w-full flex items-center gap-space-sm px-space-md py-space-sm rounded-lg hover:bg-error-container/30 font-label-sm text-label-sm text-error font-semibold disabled:opacity-50"
+                  onClick={handleLogout}
+                  disabled={loggingOut}
+                  type="button"
+                >
+                  <span className="material-symbols-outlined text-[18px]">logout</span>
+                  {loggingOut ? 'Keluar…' : 'Keluar / Logout'}
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </header>
