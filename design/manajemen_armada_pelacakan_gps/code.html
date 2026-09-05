@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-container":"#b7ae4b","on-tertiary":"#ffffff","secondary":"#7443ba","on-tertiary-fixed":"#1f1c00","on-primary-container":"#aa86fe","error":"#ba1a1a","outline":"#7a7484","on-primary":"#ffffff","primary-container":"#3e0f8d","surface-tint":"#6b47bb","surface-container-lowest":"#ffffff","surface":"#f9f9f9","surface-dim":"#dadada","surface-container-highest":"#e2e2e2","on-surface":"#1a1c1c","primary-fixed":"#e9ddff","on-primary-fixed-variant":"#522ca1","background":"#f9f9f9","on-primary-fixed":"#23005c","tertiary-fixed":"#f0e67c","tertiary":"#676000","on-background":"#1a1c1c","surface-variant":"#e2e2e2","error-container":"#ffdad6","tertiary-fixed-dim":"#d3c963","on-tertiary-container":"#454100","inverse-primary":"#d0bcff","on-surface-variant":"#494452","on-error":"#ffffff","on-secondary-fixed":"#280056","secondary-container":"#b482fd","on-secondary-fixed-variant":"#5b27a1","surface-container-low":"#f4f3f3","secondary-fixed-dim":"#d7baff","secondary-fixed":"#eddcff","on-secondary-container":"#46038c","on-tertiary-fixed-variant":"#4d4800","on-error-container":"#93000a","inverse-surface":"#2f3131","on-secondary":"#ffffff","primary-fixed-dim":"#d0bcff","surface-bright":"#f9f9f9","outline-variant":"#cbc3d4","inverse-on-surface":"#f1f1f1","surface-container":"#eeeeee","primary":"#260061","surface-container-high":"#e8e8e8"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin-mobile":"1rem","gutter-mobile":"0.75rem","space-3xl":"3rem","gutter-desktop":"1.5rem","space-sm":"0.75rem","space-2xl":"2.5rem","space-lg":"1.5rem","space-md":"1rem","space-3xs":"0.125rem","margin-tablet":"1.5rem","space-2xs":"0.25rem","space-xl":"2rem","space-xs":"0.5rem","margin-desktop":"2rem","gutter-tablet":"1rem"},fontFamily:{"body-lg":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"body-sm":["Inter"],"display-lg":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"caption-xs":["Inter"],"label-sm":["Inter"],"data-mono":["Inter"],"title-md":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Inter"]},fontSize:{"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-xl":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"caption-xs":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"500"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"600"}],"data-mono":["13px",{"lineHeight":"18px","letterSpacing":"-0.01em","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-xl-mobile":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["14px",{"lineHeight":"20px","fontWeight":"500"}]}}}}</script></head><body class="bg-surface-container font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(62,15,141,0.04)]"><div class="flex flex-col"><div class="h-20 px-space-lg flex items-center gap-space-sm"><img alt="Velocis Fleet Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XYLtNk5iMxyiEa4Dpp9oHFjtA_WQX01dZIiBUeudsf4MGVNywUKzA8K5gQJ-V9UncnhudnbY8J5E-byLbC4T9CdHOExckb73nKwzkYOFsDOExhsGjXyt5xc5cFd6BV8ESfCDfXHvS23L-fBdrmqOE9KYFSY7D8o_EMo1oIu46_NWsqMsd5dVfRuD6CAr2NcpV3P-z-Z2jLkV1jTkvWslV_yRjY6uv-Ez4D3uPjTFtoFRnqicjOAERmuhY"/><div class="flex flex-col"><span class="font-headline-lg text-headline-lg text-primary leading-tight tracking-tight">Velocis</span><span class="font-caption-xs text-caption-xs text-on-surface-variant uppercase tracking-wider">Fleet Orchestration</span></div></div><div class="px-space-md mt-space-xs"><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary font-label-md font-bold shadow-[0_4px_12px_rgba(62,15,141,0.15)]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="overview-live-tracking" href="#"><span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-[20px]">hub</span><span class="font-label-md text-label-md">Live Fleet Tracking</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl transition-all group bg-primary-container text-on-primary font-label-md font-bold shadow-[0_4px_12px_rgba(62,15,141,0.15)]" data-path="fleet-units" href="#"><span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-[20px]">directions_car</span><span class="font-label-md text-label-md">Manajemen Armada</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="bookings" href="#"><span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-[20px]">calendar_month</span><span class="font-label-md text-label-md">Manajemen Pemesanan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="driver-schedules" href="#"><span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-[20px]">badge</span><span class="font-label-md text-label-md">Jadwal Sopir &amp; Handover</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="finance-reports" href="#"><span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-[20px]">analytics</span><span class="font-label-md text-label-md">Laporan &amp; Keuangan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="system-settings" href="#"><span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-[20px]">tune</span><span class="font-label-md text-label-md">Pengaturan Sistem</span></a></nav></div></div><div class="p-space-md"><div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-caption-xs text-caption-xs text-on-surface-variant font-medium">Support 24/7 Priority</span><span class="w-2 h-2 rounded-full bg-tertiary-container ring-4 ring-tertiary-fixed/30"></span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Hubungi bantuan teknis dispatch armada</p><div class="pt-space-xs flex items-center justify-between text-on-surface-variant"><span class="font-caption-xs text-caption-xs text-on-tertiary-container bg-tertiary-fixed px-space-2xs py-space-3xs rounded font-semibold">v2.4.0-enterprise</span><span class="font-caption-xs text-caption-xs text-outline">SLA 99.9%</span></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(62,15,141,0.03)] px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full h-10 pl-11 pr-space-md bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md rounded-xl focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary-container transition-all" placeholder="Cari plat nomor, penyewa, atau booking ID..." type="text"/></div></div><div class="flex items-center gap-space-lg"><button class="h-10 px-space-md bg-primary-container text-on-primary font-label-md text-label-md rounded-xl flex items-center gap-space-xs shadow-[0_2px_8px_rgba(62,15,141,0.2)] hover:bg-primary transition-all" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>+ Input Pesanan Manual</span></button><div class="relative flex items-center"><button aria-label="Notifikasi Servis &amp; Pajak" class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span></button><span class="absolute -top-1 -right-1 bg-tertiary-fixed text-on-tertiary-fixed font-caption-xs text-caption-xs font-bold px-1.5 py-0.5 rounded-full ring-2 ring-surface-container-lowest">3</span></div><div class="h-8 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-sm pl-space-xs cursor-pointer group"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuDmE1mOGEbS6RKbppVD-ErdUPbxqPiby7ApryHq1hoNwqIOveyPcEwU5INbF1Vde8uEboqHE_hYhqgztqwYD84c_mBOJ7RD9A-oC729eLfGBYAkAmjKHv3bi65WxthHX_jFDdSXb0vHRP_MPBLWggYGY8oZnfg0dvwEA1CfDoz5xmBypx1O5LKW491J5FiEe6ElOw8VMwd5f33TQhMDwjjheSgh9kpuYhQdsSGy86qiA1Os0F89jJ"/><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight group-hover:text-primary transition-colors">Arya Pratama</span><span class="font-caption-xs text-caption-xs text-on-surface-variant leading-tight">Head of Fleet Operations</span></div><span class="material-symbols-outlined text-outline text-[18px] ml-space-3xs">expand_more</span></div></div></header><main class="w-full pt-20 bg-surface-container min-h-screen px-space-xl py-space-xl"><div class="flex flex-col w-full gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="font-label-sm text-label-sm tracking-wider uppercase">Portal Operasional</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Manajemen Armada &amp; Telematika</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight mt-space-3xs">Manajemen Armada &amp; Pelacakan GPS</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Kendali langsung telemetri, utilisasi real-time, serta siklus pemeliharaan aset kendaraan.</p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-xs rounded-xl shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="font-data-mono text-data-mono text-on-surface font-bold">48 Telematics Online</span>
+<span class="font-caption-xs text-caption-xs text-outline ml-space-3xs">Ping 18ms</span>
+</div>
+<button class="h-10 px-space-md bg-surface-container-lowest text-primary font-label-md text-label-md rounded-xl shadow-sm hover:bg-surface-container-high transition-all flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Sinkronisasi Sensor</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-primary-container/5 pointer-events-none group-hover:scale-110 transition-transform"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">directions_car</span>
+</div>
+<span class="font-caption-xs text-caption-xs font-semibold px-space-xs py-space-3xs rounded-full bg-surface-container-high text-on-surface-variant">Kapasitas 100%</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-xs text-caption-xs text-on-surface-variant uppercase font-medium tracking-wide">Total Armada Terdaftar</span>
+<div class="flex items-baseline gap-space-xs mt-space-3xs">
+<span class="font-headline-xl text-headline-xl text-primary font-bold">48</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Unit Aktif</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-sm pt-space-xs text-on-surface-variant">
+<span class="inline-flex items-center gap-1 font-caption-xs text-caption-xs text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>32 Siap
+          </span>
+<span class="inline-flex items-center gap-1 font-caption-xs text-caption-xs text-secondary bg-primary-fixed/40 px-1.5 py-0.5 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>12 Sewa
+          </span>
+<span class="inline-flex items-center gap-1 font-caption-xs text-caption-xs text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>3 Servis
+          </span>
+<span class="inline-flex items-center gap-1 font-caption-xs text-caption-xs text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">
+            1 Booked
+          </span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-secondary-container/10 pointer-events-none group-hover:scale-110 transition-transform"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">speed</span>
+</div>
+<span class="font-caption-xs text-caption-xs font-semibold px-space-xs py-space-3xs rounded-full bg-emerald-50 text-emerald-700 flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +4.2% mgg ini
+        </span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-xs text-caption-xs text-on-surface-variant uppercase font-medium tracking-wide">Rasio Utilisasi Armada</span>
+<div class="flex items-baseline gap-space-xs mt-space-3xs">
+<span class="font-headline-xl text-headline-xl text-primary font-bold">78.5%</span>
+<span class="font-label-sm text-label-sm text-outline">Target 80%</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 mt-space-sm overflow-hidden">
+<div class="bg-primary-container h-2 rounded-full transition-all duration-500" style="width: 78.5%"></div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-tertiary-fixed/30 pointer-events-none group-hover:scale-110 transition-transform"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[22px]">build_circle</span>
+</div>
+<span class="font-caption-xs text-caption-xs font-semibold px-space-xs py-space-3xs rounded-full bg-amber-50 text-amber-800 animate-bounce">
+          Perlu Tindakan
+        </span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-xs text-caption-xs text-on-surface-variant uppercase font-medium tracking-wide">Pengingat Servis &amp; Pajak</span>
+<div class="flex items-baseline gap-space-xs mt-space-3xs">
+<span class="font-headline-xl text-headline-xl text-error font-bold">4 Unit</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kritis</span>
+</div>
+<div class="flex items-center justify-between mt-space-sm pt-space-xs text-on-surface-variant font-caption-xs text-caption-xs">
+<span class="text-error font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">oil_barrel</span> 2 Jatuh Tempo Oli
+          </span>
+<span class="text-tertiary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">assignment_late</span> 2 Pajak &lt; 14 Hari
+          </span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-primary-fixed/20 pointer-events-none group-hover:scale-110 transition-transform"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">local_gas_station</span>
+</div>
+<span class="font-caption-xs text-caption-xs font-semibold px-space-xs py-space-3xs rounded-full bg-emerald-50 text-emerald-700">
+          Eco Efisien
+        </span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-xs text-caption-xs text-on-surface-variant uppercase font-medium tracking-wide">Efisiensi BBM Rata-rata</span>
+<div class="flex items-baseline gap-space-xs mt-space-3xs">
+<span class="font-headline-xl text-headline-xl text-primary font-bold">12.4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">km / Liter</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-sm pt-space-xs">
+<svg class="w-full h-5 text-secondary-container" preserveaspectratio="none" viewbox="0 0 100 20">
+<path d="M0,15 Q25,5 50,12 T100,6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+</svg>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-sm flex-1">
+<div class="relative min-w-[280px] flex-1 max-w-md">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full h-10 pl-11 pr-space-md bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md rounded-xl focus:outline-none focus:bg-surface-container-lowest shadow-sm transition-all" id="fleetSearchInput" placeholder="Cari nomor plat, tipe kendaraan, ID unit..." type="text"/>
+</div>
+<div class="relative">
+<select class="h-10 px-space-md pr-8 bg-surface-container-low text-on-surface font-label-md text-label-md rounded-xl appearance-none focus:outline-none cursor-pointer">
+<option value="all">Status: Semua Armada</option>
+<option value="available">Tersedia (Ready)</option>
+<option value="rented">Sedang Disewa</option>
+<option value="service">Dalam Perawatan</option>
+<option value="booked">Dipesan / Reservasi</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+<div class="relative">
+<select class="h-10 px-space-md pr-8 bg-surface-container-low text-on-surface font-label-md text-label-md rounded-xl appearance-none focus:outline-none cursor-pointer">
+<option value="all">Kategori: Semua Kelas</option>
+<option value="mpv">MPV &amp; Family Van</option>
+<option value="suv">SUV &amp; Cross 4WD</option>
+<option value="luxury">Luxury &amp; Executive</option>
+<option value="sedan">Sedan Premium</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end lg:self-auto">
+<button class="h-10 px-space-md bg-surface-container-low text-on-surface-variant font-label-md text-label-md rounded-xl hover:bg-surface-container-high transition-all flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">ios_share</span>
+<span>Ekspor Laporan</span>
+</button>
+<button class="h-10 px-space-md bg-primary-container text-on-primary font-label-md text-label-md rounded-xl flex items-center gap-space-xs shadow-md hover:bg-primary transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Tambah Kendaraan Baru</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="p-space-lg flex items-center justify-between bg-surface-container-lowest">
+<div>
+<h2 class="font-title-md text-title-md text-primary font-bold">Daftar Inventaris Kendaraan</h2>
+<p class="font-caption-xs text-caption-xs text-on-surface-variant">Menampilkan 4 dari 48 unit prioritas live GPS monitoring</p>
+</div>
+<div class="flex items-center gap-space-2xs">
+<button aria-label="Tampilan Tabel" class="p-2 rounded-lg bg-surface-container text-primary" type="button">
+<span class="material-symbols-outlined text-[18px]">table_rows</span>
+</button>
+<button aria-label="Tampilan Grid" class="p-2 rounded-lg text-outline hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+</button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-caption-xs text-caption-xs uppercase tracking-wider">
+<th class="py-space-sm px-space-md">Kendaraan &amp; Plat</th>
+<th class="py-space-sm px-space-md">Status</th>
+<th class="py-space-sm px-space-md">Odo &amp; BBM</th>
+<th class="py-space-sm px-space-md">Telematika Terkini</th>
+<th class="py-space-sm px-space-md text-right">Aksi</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr class="hover:bg-primary-fixed/20 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-lg object-cover shadow-sm flex-shrink-0" data-alt="Modern Toyota Innova Zenix pearl white luxury hybrid car side front three quarter profile in a minimalist sleek vehicle studio lighting setup." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_rvxsjt4N5qniFn9AXelDtuZzQ_Ybh0CcMLEOGtL7KL_7sxdaCqU4bqu3lZcxdU5f_M754Num0qfQ0bQ-QIuigfQcmhtuxg6rYw_uUdcGE0JKJPs2u_vjMU1z9qPzeHC8IRvbjl6uFRZ4w37qmwNBAwrjyyeQPoV18cAcJ_SXU7GE34tUuhpB9abifQPuSozD0zoHzrGuwLbxRLAY0ChQnfXpW1zxsqAjVBhaaEhh5WwlMPT5sWvt"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Toyota Innova Zenix Q Hybrid</span>
+<div class="flex items-center gap-space-2xs mt-0.5">
+<span class="font-data-mono text-caption-xs bg-surface-container px-1.5 py-0.5 rounded text-primary font-bold">B 1842 VLZ</span>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">MPV 2023</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                    Tersedia
+                  </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-data-mono text-label-sm font-semibold text-on-surface">18,450 km</span>
+<div class="flex items-center gap-1.5 mt-1">
+<div class="w-16 bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-emerald-500 h-1.5 rounded-full" style="width: 85%"></div>
+</div>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">85%</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-1 text-emerald-700 font-caption-xs text-caption-xs font-semibold">
+<span class="material-symbols-outlined text-[14px]">near_me</span>
+<span>Parkir Pool Cawang (0 km/h)</span>
+</div>
+<span class="font-caption-xs text-caption-xs text-outline mt-0.5">STNK: 14 Des 2025</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button aria-label="Lihat Telemetri" class="p-1.5 rounded-lg text-primary hover:bg-primary-fixed transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button aria-label="Menu Aksi" class="p-1.5 rounded-lg text-outline hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-primary-fixed/20 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-lg object-cover shadow-sm flex-shrink-0" data-alt="Black metallic Mitsubishi Pajero Sport Dakar luxury SUV cruising on highway background shot with dynamic studio fill lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ8C2dgXnmZD9nNx1hg720mTPE61imQE9DSN0mTJELFE1DQSv8UW3DP2fpT-sBhBivWf6n6lhgBqel4uzp_ObSotsLhgaNztMZdFW4lrQEzeSfbETNV6HkuV3J6rZ3kN1J2sOq_ST99Wp5mLtfkQ_NkllCjPsYfRC581FgAWQcQK8Yufdp3oVR2g9cwlr3NaptfyYB9ZB5dMTynxSuDG_rYABOgBYku0ijDmGfSckSTUF-2fdXmFdH"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Mitsubishi Pajero Sport Dakar</span>
+<div class="flex items-center gap-space-2xs mt-0.5">
+<span class="font-data-mono text-caption-xs bg-surface-container px-1.5 py-0.5 rounded text-primary font-bold">B 2099 KFL</span>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">SUV 2022</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold shadow-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed"></span>
+                    Sedang Disewa
+                  </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-data-mono text-label-sm font-semibold text-on-surface">42,890 km</span>
+<div class="flex items-center gap-1.5 mt-1">
+<div class="w-16 bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-amber-500 h-1.5 rounded-full" style="width: 40%"></div>
+</div>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">40%</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-1 text-secondary font-caption-xs text-caption-xs font-semibold">
+<span class="material-symbols-outlined text-[14px]">navigation</span>
+<span>Tol Jagorawi KM 28 (78 km/h)</span>
+</div>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant mt-0.5">Driver: Bambang H. (Penyewa: PT Surya)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button aria-label="Lihat Telemetri" class="p-1.5 rounded-lg text-primary hover:bg-primary-fixed transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button aria-label="Menu Aksi" class="p-1.5 rounded-lg text-outline hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-primary-fixed/20 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-lg object-cover shadow-sm flex-shrink-0" data-alt="Executive black Toyota Alphard premium minivan parked in front of high end luxury hotel driveway under evening architectural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgaDklmV8HH9A2DZ3X0CZ25Ul9seYb2LhaXVDfHu8AnMQ0WLzQJDqHNrby-jiYWo8pRAwAhbZ3JLmJJ38wSmWCD2AqebUVmA3q9SHk94nvPaOtdhswTx0z4uHW_7TVcP2RIe31dFaSjT47f7AJEh-ns1i1boieBJUm7d2c42xewYsSqEr0Us5BPYE7kBrQFWU2JExArKJB9AiXdZVn1qZYEK4J8lxiORWWpP8CxHrbLqKa4ilsZGxu"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Toyota Alphard 2.5G Executive</span>
+<div class="flex items-center gap-space-2xs mt-0.5">
+<span class="font-data-mono text-caption-xs bg-surface-container px-1.5 py-0.5 rounded text-primary font-bold">D 1455 ACD</span>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">Luxury 2023</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed"></span>
+                    Sedang Disewa
+                  </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-data-mono text-label-sm font-semibold text-on-surface">12,120 km</span>
+<div class="flex items-center gap-1.5 mt-1">
+<div class="w-16 bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-emerald-500 h-1.5 rounded-full" style="width: 95%"></div>
+</div>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">95%</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-1 text-secondary font-caption-xs text-caption-xs font-semibold">
+<span class="material-symbols-outlined text-[14px]">flight_takeoff</span>
+<span>Bandara Soetta T3 (VIP Arrival)</span>
+</div>
+<span class="font-caption-xs text-caption-xs text-outline mt-0.5">Handover kembali: 20:00 WIB</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button aria-label="Lihat Telemetri" class="p-1.5 rounded-lg text-primary hover:bg-primary-fixed transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button aria-label="Menu Aksi" class="p-1.5 rounded-lg text-outline hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-primary-fixed/20 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-lg object-cover shadow-sm flex-shrink-0" data-alt="Red Honda HR-V RS compact stylish crossover car front angle view in clean urban setting with bright daylight reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-HqmvIxzSlcF8zCSCvauFIDIcwB-LzSgaLqS5Ue4dVVzAPynRoakgo_R08NPfrvJexGAJkeXZkWXFg_Djvdc2jFxlDesQ1Q3b8lvPG25vVR9p2KFfQEKW5ZTw_7FU_JPBtK9RDY3neVt1wPEG4clr2BYyVIx40x8VxMGLN22ok9kV8yMvkux1KxQ3BrlaY-_wUGxoy5Ey4Hul6J6mLavVvMVtjHlUmKLxLJuq4fRAe0Zx88hr5Qx0"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Honda HR-V RS Turbo</span>
+<div class="flex items-center gap-space-2xs mt-0.5">
+<span class="font-data-mono text-caption-xs bg-surface-container px-1.5 py-0.5 rounded text-primary font-bold">B 2410 SVR</span>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">Crossover 2022</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-50 text-amber-800 font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">engineering</span>
+                    Servis Berkala
+                  </span>
+</td>
+<td class="py-space-md px-space-md whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-data-mono text-label-sm font-semibold text-error">30,050 km</span>
+<div class="flex items-center gap-1.5 mt-1">
+<div class="w-16 bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-1.5 rounded-full" style="width: 55%"></div>
+</div>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">55%</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-1 text-amber-700 font-caption-xs text-caption-xs font-semibold">
+<span class="material-symbols-outlined text-[14px]">build</span>
+<span>Bengkel Resmi Honda Fatmawati</span>
+</div>
+<span class="font-caption-xs text-caption-xs text-error font-medium mt-0.5">Estimasi Selesai: Hari Ini 16:30</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="h-8 px-space-xs bg-tertiary-fixed text-on-tertiary-fixed font-caption-xs text-caption-xs font-bold rounded hover:bg-tertiary-container hover:text-on-tertiary transition-all" type="button">
+                      Cek SPK
+                    </button>
+<button aria-label="Menu Aksi" class="p-1.5 rounded-lg text-outline hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">Menampilkan 1 - 4 dari 48 Armada</span>
+<div class="flex items-center gap-space-2xs">
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-outline font-caption-xs text-caption-xs hover:text-primary" type="button">Sebelumnya</button>
+<button class="px-2.5 py-1 rounded bg-primary-container text-on-primary font-caption-xs text-caption-xs font-semibold" type="button">1</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface-variant font-caption-xs text-caption-xs hover:bg-surface-container" type="button">2</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface-variant font-caption-xs text-caption-xs hover:bg-surface-container" type="button">3</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-outline font-caption-xs text-caption-xs hover:text-primary" type="button">Berikutnya</button>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">calendar_view_week</span>
+<h3 class="font-title-md text-title-md text-primary font-bold">Timeline Ketersediaan Unit (48 Jam ke Depan)</h3>
+</div>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">Zona Waktu: WIB (GMT+7)</span>
+</div>
+<div class="space-y-space-sm">
+<div class="flex items-center gap-space-sm text-caption-xs font-data-mono">
+<div class="w-28 truncate font-bold text-on-surface">B 1842 VLZ</div>
+<div class="flex-1 bg-surface-container rounded-md h-7 flex items-center p-1 relative">
+<div class="h-full bg-emerald-500/20 text-emerald-800 rounded px-2 flex items-center font-label-sm text-caption-xs font-semibold" style="width: 100%">
+                Standby Pool Siap Booking Instant
+              </div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm text-caption-xs font-data-mono">
+<div class="w-28 truncate font-bold text-on-surface">B 2099 KFL</div>
+<div class="flex-1 bg-surface-container rounded-md h-7 flex items-center p-1 relative">
+<div class="h-full bg-primary-container text-on-primary rounded px-2 flex items-center font-label-sm text-caption-xs font-semibold" style="width: 65%">
+                Disewa s.d Besok 14:00 (PT Surya)
+              </div>
+<div class="h-full bg-surface-container-highest text-on-surface-variant rounded px-1.5 flex items-center ml-1 text-[10px]" style="width: 32%">
+                Buffer Cuci/Cek
+              </div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm text-caption-xs font-data-mono">
+<div class="w-28 truncate font-bold text-on-surface">D 1455 ACD</div>
+<div class="flex-1 bg-surface-container rounded-md h-7 flex items-center p-1 relative">
+<div class="h-full bg-primary-container text-on-primary rounded px-2 flex items-center font-label-sm text-caption-xs font-semibold" style="width: 40%">
+                VIP Soetta (20:00)
+              </div>
+<div class="h-full bg-tertiary-fixed text-on-tertiary-fixed rounded px-2 flex items-center ml-1 font-semibold text-[10px]" style="width: 55%">
+                Confirmed Sewa Baru: Kedutaan 07:00
+              </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-md flex items-center justify-between border-b border-surface-container">
+<div class="flex items-center gap-space-xs">
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></div>
+<h3 class="font-title-md text-title-md text-primary font-bold">Pelacakan Satelit Real-Time</h3>
+</div>
+<div class="flex items-center gap-space-2xs bg-surface-container rounded-lg p-0.5">
+<button class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container-lowest text-primary shadow-xs" type="button">Peta</button>
+<button class="px-2 py-0.5 rounded text-[11px] font-medium text-on-surface-variant hover:text-on-surface" type="button">Satelit</button>
+<button class="px-2 py-0.5 rounded text-[11px] font-medium text-on-surface-variant hover:text-on-surface" type="button">Geofence</button>
+</div>
+</div>
+<div class="relative w-full h-80 overflow-hidden group">
+<div class="w-full h-full bg-cover bg-center" data-location="Jakarta, Indonesia" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCPnyNY-Y0bxlU37_mwL-7DKHSrdHYcLfiY9ZKIEsDTBmWSOL29xfslP6FdbdfEtPAncY7cjZnIDyl2Np5jOq4z7d5aYtneReQ_AyqvjI3L-9qCGaZC5qvz3QELEmGU7NvF_US-eAi_8w4ZpiSi0gDKmmTO1eprUfXy46usfMbWTJ0RKYc3NX0gEkSWx8TPrlVeEXUqAWIdtfzOSvRn1X3JTa_Lj2fffvBhoI5r-kR6FzWZja5IDpeP')"></div>
+<div class="absolute inset-0 bg-primary/10 pointer-events-none"></div>
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg shadow-md flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">radar</span>
+<span class="font-caption-xs text-caption-xs font-bold text-on-surface">Radar DKI &amp; Sekitarnya</span>
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+</div>
+<div class="absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 group-hover:scale-110 transition-transform cursor-pointer">
+<div class="relative flex flex-col items-center">
+<div class="bg-primary-container text-on-primary font-caption-xs text-[10px] font-bold px-2 py-0.5 rounded-md shadow-lg whitespace-nowrap mb-1 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>
+                B 2099 KFL • 78 km/h
+              </div>
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-xl ring-4 ring-white/50">
+<span class="material-symbols-outlined text-[18px]">directions_car</span>
+</div>
+</div>
+</div>
+<div class="absolute top-2/3 right-1/4 -translate-x-1/2 -translate-y-1/2 group-hover:scale-110 transition-transform cursor-pointer">
+<div class="relative flex flex-col items-center">
+<div class="bg-surface-container-lowest text-primary font-caption-xs text-[10px] font-bold px-2 py-0.5 rounded-md shadow-lg whitespace-nowrap mb-1 flex items-center gap-1 border border-primary/20">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                B 1842 VLZ • Siap
+              </div>
+<div class="w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center shadow-xl ring-4 ring-white/50">
+<span class="material-symbols-outlined text-[18px]">local_parking</span>
+</div>
+</div>
+</div>
+<div class="absolute top-1/2 right-1/3 -translate-x-1/2 -translate-y-1/2 group-hover:scale-110 transition-transform cursor-pointer">
+<div class="relative flex flex-col items-center">
+<div class="bg-error text-on-error font-caption-xs text-[10px] font-bold px-2 py-0.5 rounded-md shadow-lg whitespace-nowrap mb-1 flex items-center gap-1 animate-pulse">
+<span class="material-symbols-outlined text-[10px]">warning</span>
+                B 3012 SHJ • 115 km/h
+              </div>
+<div class="w-8 h-8 rounded-full bg-error text-white flex items-center justify-center shadow-xl ring-4 ring-error-container">
+<span class="material-symbols-outlined text-[18px]">speed</span>
+</div>
+</div>
+</div>
+<div class="absolute bottom-3 right-3 flex flex-col gap-1 bg-surface-container-lowest/90 backdrop-blur-md p-1 rounded-lg shadow-md">
+<button aria-label="Perbesar Peta" class="w-7 h-7 flex items-center justify-center text-on-surface hover:bg-surface-container rounded" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<div class="h-px bg-outline-variant/30"></div>
+<button aria-label="Perkecil Peta" class="w-7 h-7 flex items-center justify-center text-on-surface hover:bg-surface-container rounded" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm text-caption-xs">
+<span class="flex items-center gap-1 font-semibold text-on-surface">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span> Bergerak (12)
+            </span>
+<span class="flex items-center gap-1 font-semibold text-on-surface">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Parkir Standby (32)
+            </span>
+<span class="flex items-center gap-1 font-semibold text-error">
+<span class="w-2 h-2 rounded-full bg-error"></span> Insiden / Speed (1)
+            </span>
+</div>
+<button class="text-primary font-label-sm text-label-sm font-bold hover:underline flex items-center gap-0.5" type="button">
+            Layar Penuh
+            <span class="material-symbols-outlined text-[16px]">fullscreen</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[20px]">notification_important</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary font-bold">Peringatan Pemeliharaan &amp; Dokumen</h3>
+<p class="font-caption-xs text-caption-xs text-outline">Tindakan pencegahan downtime operasional armada</p>
+</div>
+</div>
+<span class="font-caption-xs text-caption-xs font-bold bg-error-container text-on-error-container px-2 py-0.5 rounded-full">
+            3 Mendesak
+          </span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="p-space-md rounded-xl bg-amber-500/10 flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-amber-700 text-[20px]">oil_barrel</span>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">Toyota Avanza Veloz</span>
+<span class="font-data-mono text-caption-xs bg-surface-container-lowest px-1.5 py-0.2 rounded font-bold text-primary">B 2391 PZO</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    Jatuh tempo ganti oli mesin &amp; filter dalam <strong class="text-amber-800">150 km</strong> lagi (Odo: 49,850 km).
+                  </p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-xs mt-space-2xs">
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-lowest text-on-surface-variant font-caption-xs text-caption-xs font-semibold hover:bg-surface-container" type="button">Tunda 3 Hari</button>
+<button class="px-space-md py-1 rounded-lg bg-primary-container text-on-primary font-caption-xs text-caption-xs font-bold hover:bg-primary transition-all shadow-xs flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">calendar_add_on</span>
+                Buat Jadwal Servis
+              </button>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">assignment_late</span>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">Hyundai Stargazer Prime</span>
+<span class="font-data-mono text-caption-xs bg-surface-container-lowest px-1.5 py-0.2 rounded font-bold text-primary">B 1104 TRK</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    Pajak Tahunan STNK jatuh tempo <strong class="text-secondary font-bold">18 Mei 2025</strong> (Tersisa 11 hari kerja).
+                  </p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-xs mt-space-2xs">
+<button class="px-space-md py-1 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-caption-xs text-caption-xs font-bold hover:bg-tertiary-container hover:text-on-tertiary transition-all shadow-xs flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">fact_check</span>
+                Proses Pajak Samsat
+              </button>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-error-container/40 flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[20px]">crisis_alert</span>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-error">Mitsubishi Xpander Ultimate</span>
+<span class="font-data-mono text-caption-xs bg-surface-container-lowest px-1.5 py-0.2 rounded font-bold text-error">B 3012 SHJ</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-error-container mt-0.5">
+<strong>Peringatan Kecepatan (Over-Speed):</strong> 115 km/h terdeteksi di Tol Cipali KM 102 (Batas: 100 km/h).
+                  </p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-2xs pt-1 border-t border-error/10">
+<span class="font-caption-xs text-caption-xs text-error font-medium">Pengemudi: Rian Santoso (0812-9988-xxxx)</span>
+<button class="px-space-sm py-1 rounded-lg bg-error text-on-error font-caption-xs text-caption-xs font-bold hover:bg-red-700 transition-all flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">call</span>
+                Hubungi Pengemudi
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const searchInput = document.getElementById('fleetSearchInput');
+    if (searchInput) {
+      searchInput.addEventListener('input', function(e) {
+        const query = e.target.value.toLowerCase();
+        const rows = document.querySelectorAll('tbody tr');
+        rows.forEach(row => {
+          const text = row.textContent.toLowerCase();
+          if (text.includes(query)) {
+            row.style.display = '';
+          } else {
+            row.style.display = 'none';
+          }
+        });
+      });
+    }
+  })();
+</script></main></div></body></html>

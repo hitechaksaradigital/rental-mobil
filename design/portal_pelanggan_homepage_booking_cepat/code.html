@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#7a7484", "error": "#ba1a1a", "on-primary": "#ffffff", "secondary": "#7443ba", "on-background": "#1a1c1c", "on-primary-fixed": "#23005c", "surface-container-low": "#f4f3f3", "surface-tint": "#6b47bb", "on-secondary-fixed": "#280056", "surface-bright": "#f9f9f9", "tertiary-fixed": "#f0e67c", "on-tertiary-fixed-variant": "#4d4800", "surface-container-high": "#e8e8e8", "on-secondary-container": "#46038c", "tertiary": "#676000", "on-error-container": "#93000a", "surface-container": "#eeeeee", "on-surface-variant": "#494452", "outline-variant": "#cbc3d4", "surface": "#f9f9f9", "surface-container-lowest": "#ffffff", "background": "#f9f9f9", "primary": "#260061", "inverse-surface": "#2f3131", "primary-fixed": "#e9ddff", "primary-container": "#3e0f8d", "secondary-fixed-dim": "#d7baff", "surface-variant": "#e2e2e2", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#5b27a1", "tertiary-fixed-dim": "#d3c963", "inverse-primary": "#d0bcff", "secondary-fixed": "#eddcff", "on-tertiary-fixed": "#1f1c00", "on-primary-container": "#aa86fe", "secondary-container": "#b482fd", "surface-dim": "#dadada", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "surface-container-highest": "#e2e2e2", "on-surface": "#1a1c1c", "on-primary-fixed-variant": "#522ca1", "tertiary-container": "#b7ae4b", "on-tertiary-container": "#454100", "inverse-on-surface": "#f1f1f1", "primary-fixed-dim": "#d0bcff", "on-error": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-2xs": "0.25rem", "space-3xs": "0.125rem", "margin-tablet": "1.5rem", "space-md": "1rem", "space-3xl": "3rem", "gutter-tablet": "1rem", "space-sm": "0.75rem", "gutter-mobile": "0.75rem", "space-xl": "2rem", "gutter-desktop": "1.5rem", "space-lg": "1.5rem", "margin-desktop": "2rem", "space-2xl": "2.5rem", "space-xs": "0.5rem", "margin-mobile": "1rem" }, "fontFamily": { "headline-lg": [ "Plus Jakarta Sans" ], "data-mono": [ "Inter" ], "headline-xl": [ "Plus Jakarta Sans" ], "display-lg-mobile": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ], "display-lg": [ "Plus Jakarta Sans" ], "body-lg": [ "Inter" ], "label-md": [ "Inter" ], "body-sm": [ "Inter" ], "caption-xs": [ "Inter" ], "headline-xl-mobile": [ "Plus Jakarta Sans" ], "body-md": [ "Inter" ], "label-sm": [ "Inter" ] }, "fontSize": { "headline-lg": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "data-mono": [ "13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-xl": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "display-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "title-md": [ "16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "display-lg": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "label-md": [ "14px", { "lineHeight": "20px", "fontWeight": "500" } ], "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "caption-xs": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "headline-xl-mobile": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "label-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(62,15,141,0.06)]"><div class="h-20 w-full max-w-[1680px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm focus:outline-none" data-path="beranda" href="#"><img alt="Brand logo. - Primary color: #3e0f8d
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XYLtNk5iMxyiEa4Dpp9oHFjtA_WQX01dZIiBUeudsf4MGVNywUKzA8K5gQJ-V9UncnhudnbY8J5E-byLbC4T9CdHOExckb73nKwzkYOFsDOExhsGjXyt5xc5cFd6BV8ESfCDfXHvS23L-fBdrmqOE9KYFSY7D8o_EMo1oIu46_NWsqMsd5dVfRuD6CAr2NcpV3P-z-Z2jLkV1jTkvWslV_yRjY6uv-Ez4D3uPjTFtoFRnqicjOAERmuhY"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary tracking-tight leading-none">Velocis</span><span class="font-caption-xs text-caption-xs text-secondary tracking-wider uppercase font-semibold">Fleet &amp; Mobility</span></div></a><nav class="hidden xl:flex items-center gap-space-lg pl-space-md" data-active-classes="text-primary-container font-semibold"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="armada-rental" href="#">Armada &amp; Rental</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="layanan-supir" href="#">Layanan &amp; Supir</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="promo-khusus" href="#">Promo Khusus</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="cara-sewa" href="#">Cara Sewa</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="bantuan-faq" href="#">Bantuan &amp; FAQ</a></nav></div><div class="flex items-center gap-space-sm md:gap-space-md"><a class="hidden sm:inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors text-label-sm font-label-sm" href="https://wa.me/" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-secondary text-[18px]">chat</span><span class="hidden lg:inline">WhatsApp Hub</span></a><div class="inline-flex items-center rounded-full bg-surface-container-low p-space-3xs text-label-sm font-label-sm text-on-surface-variant"><button class="px-space-xs py-space-3xs rounded-full bg-surface-container-lowest text-primary font-semibold shadow-[0_1px_4px_rgba(62,15,141,0.08)]" type="button">ID</button><button class="px-space-xs py-space-3xs rounded-full hover:text-on-surface transition-colors" type="button">EN</button></div><div class="flex items-center gap-space-xs pl-space-xs"><a class="flex items-center gap-space-xs p-space-3xs rounded-full hover:bg-surface-container-low transition-colors" data-path="akun-profil" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VqYJDpXZBV9vC0jr8pju5iV3RVq-eB7EcIDQEGt6uFFFcU2y2-BKf58rDG2y3g-CZ0wsZkuAOeNCmzr0g95jpbFuPVKXaDoDty0gS5ObnKSWi5nXIsBwR0_QS1ubh8uPDfpNGgUO9VhzeQsN-GR1MyX9N0u545QnvPIhU4F60NLgTvVTsN5oVFnyPoSXIie2Fd1FJPJzL05TSD-fPr1tBwdENIu7MBwrM00MHa9MtKKDsM2N3HqGCAfAY"/><span class="hidden xl:inline font-label-sm text-label-sm text-on-surface pr-space-2xs">Akun Saya</span></a><a class="inline-flex items-center justify-center px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all shadow-[0_4px_14px_rgba(62,15,141,0.18)]" data-path="masuk-daftar" href="#">Masuk / Daftar</a></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Top Announcement Bar -->
+<aside aria-label="Pengumuman Promosi" class="w-full bg-primary text-on-primary py-space-xs px-margin-mobile md:px-margin-desktop">
+<div class="max-w-[1680px] mx-auto flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+</span>
+<p class="font-label-sm text-label-sm tracking-wide">
+          Spesial Ramadan &amp; Libur Lebaran: Gunakan kode <strong class="text-tertiary-fixed font-semibold tracking-wider">VELOCISBARU</strong> untuk potongan langsung 15%!
+        </p>
+</div>
+<div class="hidden md:flex items-center gap-space-md font-label-sm text-label-sm">
+<span class="flex items-center gap-space-2xs text-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">verified</span> Unit Siap 100% Bersih &amp; Steril
+        </span>
+<a class="underline hover:text-tertiary-fixed transition-colors font-medium" href="https://wa.me/628118356247" rel="noopener noreferrer" target="_blank">Bantuan Cepat WhatsApp</a>
+</div>
+</div>
+</aside>
+<!-- Hero & Quick Booking Hub Section -->
+<section class="relative w-full overflow-hidden bg-gradient-to-b from-surface-container-low via-surface to-surface-container-low/40 pt-space-xl pb-space-3xl">
+<!-- Ambient glowing backdrop blobs -->
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/4 right-0 w-[30rem] h-[30rem] rounded-full bg-secondary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 left-1/3 w-80 h-80 rounded-full bg-tertiary-fixed/15 blur-2xl pointer-events-none"></div>
+<div class="relative w-full max-w-[1680px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+<!-- Hero Header Typography & Quick Stat Badges -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-end mb-space-2xl">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-space-xs self-start px-space-md py-space-3xs rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary-container">verified_user</span>
+<span>Platform Sewa Mobil &amp; Layanan Mobilitas Terpercaya No. 1</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight leading-tight">
+            Sewa Mobil Nyaman, Cepat &amp; Terpercaya untuk Segala Kebutuhan Perjalanan
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+            Pilihan lepas kunci tanpa ribet atau dengan sopir eksekutif berpengalaman. Unit bersih higienis, terawat berkala di bengkel resmi, dengan jaminan tiba tepat waktu di lokasi Anda.
+          </p>
+</div>
+<div class="lg:col-span-4 flex flex-wrap lg:flex-col gap-space-sm justify-start lg:items-end">
+<div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-space-sm rounded-xl shadow-md">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">speed</span>
+</div>
+<div>
+<p class="font-headline-lg text-headline-lg text-primary leading-none">15 Menit</p>
+<p class="font-caption-xs text-caption-xs text-on-surface-variant">Verifikasi Dokumen Cepat</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-space-sm rounded-xl shadow-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">workspace_premium</span>
+</div>
+<div>
+<p class="font-headline-lg text-headline-lg text-secondary leading-none">100% Prima</p>
+<p class="font-caption-xs text-caption-xs text-on-surface-variant">Inspeksi Standar 40 Titik</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Booking Widget Card -->
+<div class="w-full bg-surface-container-lowest rounded-2xl shadow-xl overflow-hidden p-space-md md:p-space-xl">
+<!-- Tab Switcher: Lepas Kunci vs Dengan Sopir -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pb-space-lg mb-space-lg">
+<div class="inline-flex p-space-3xs rounded-xl bg-surface-container-low" role="tablist">
+<button class="flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg font-label-md text-label-md font-semibold bg-primary-container text-on-primary shadow-md transition-all" id="tab-self-drive" onclick="switchRentalMode('self')" type="button">
+<span class="material-symbols-outlined text-[20px]">key</span>
+<span>Lepas Kunci (Self-Drive)</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface transition-all" id="tab-with-driver" onclick="switchRentalMode('driver')" type="button">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+<span>Dengan Sopir (With Driver)</span>
+</button>
+</div>
+<!-- Quick Micro Toggles -->
+<div class="flex items-center gap-space-md">
+<label class="inline-flex items-center gap-space-xs cursor-pointer select-none">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-secondary accent-primary-container" id="custom-return-toggle" onchange="toggleCustomReturn(this.checked)" type="checkbox"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lokasi pengembalian berbeda</span>
+</label>
+<div class="h-4 w-[1px] bg-surface-container-highest hidden sm:block"></div>
+<span class="hidden sm:inline-flex items-center gap-space-2xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">bolt</span> Instant Confirmation
+            </span>
+</div>
+</div>
+<!-- Interactive Booking Inputs Matrix -->
+<form class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-md items-end" id="booking-form" onsubmit="event.preventDefault(); triggerArmadaSearch();">
+<!-- Lokasi Penjemputan -->
+<div class="lg:col-span-3 flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold flex items-center gap-space-2xs" for="pickup-loc">
+<span class="material-symbols-outlined text-[18px] text-primary-container">location_on</span>
+<span>Lokasi Penjemputan</span>
+</label>
+<div class="relative">
+<select class="w-full h-12 pl-space-md pr-space-xl rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary cursor-pointer appearance-none" id="pickup-loc">
+<option value="cgk">Bandara Soekarno-Hatta (T1/T2/T3)</option>
+<option value="hlp">Bandara Halim Perdanakusuma</option>
+<option selected="" value="scbd">Sudirman Central Business District (SCBD)</option>
+<option value="gbr">Stasiun Gambir / Monas Area</option>
+<option value="bdo">Bandung Pool Pasteur Express</option>
+<option value="dps">Bandara Internasional I Gusti Ngurah Rai (Bali)</option>
+<option value="custom">Alamat Khusus / Antar Hotel &amp; Rumah</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3.5 text-on-surface-variant pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Lokasi Pengembalian (Collapsible / Default Same) -->
+<div class="lg:col-span-3 hidden flex-col gap-space-2xs" id="dropoff-loc-container">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold flex items-center gap-space-2xs" for="dropoff-loc">
+<span class="material-symbols-outlined text-[18px] text-secondary">pin_drop</span>
+<span>Lokasi Pengembalian</span>
+</label>
+<div class="relative">
+<select class="w-full h-12 pl-space-md pr-space-xl rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary cursor-pointer appearance-none" id="dropoff-loc">
+<option value="same">Sama dengan lokasi jemput</option>
+<option value="cgk">Bandara Soekarno-Hatta (CGK)</option>
+<option value="hlp">Bandara Halim Perdanakusuma (HLP)</option>
+<option value="scbd">SCBD Mega Kuningan Office</option>
+<option value="dps">Pool Kuta Central Parkir (Bali)</option>
+<option value="home">Ambil Kembali di Kediaman/Hotel</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3.5 text-on-surface-variant pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Rent Duration Combined / Start Schedule -->
+<div class="lg:col-span-3 flex flex-col gap-space-2xs" id="start-date-container">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold flex items-center justify-between" for="start-date">
+<span class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[18px] text-primary-container">calendar_today</span>
+<span>Mulai Sewa</span>
+</span>
+<span class="font-caption-xs text-caption-xs text-primary-container font-semibold">WIB</span>
+</label>
+<div class="grid grid-cols-2 gap-space-xs">
+<input class="h-12 px-space-xs md:px-space-sm rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary cursor-pointer" id="start-date" onchange="calculateRentalPeriod()" type="date" value="2025-04-10"/>
+<input class="h-12 px-space-xs md:px-space-sm rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary cursor-pointer" id="start-time" type="time" value="09:00"/>
+</div>
+</div>
+<!-- Return Schedule & Duration Badge -->
+<div class="lg:col-span-3 flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold flex items-center justify-between" for="end-date">
+<span class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[18px] text-primary-container">event_available</span>
+<span>Selesai Sewa</span>
+</span>
+<span class="font-caption-xs text-caption-xs px-space-xs py-space-3xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold" id="rental-duration-badge">3 Hari (72 Jam)</span>
+</label>
+<div class="grid grid-cols-2 gap-space-xs">
+<input class="h-12 px-space-xs md:px-space-sm rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary cursor-pointer" id="end-date" onchange="calculateRentalPeriod()" type="date" value="2025-04-13"/>
+<input class="h-12 px-space-xs md:px-space-sm rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary cursor-pointer" id="end-time" type="time" value="09:00"/>
+</div>
+</div>
+<!-- Search CTA Button -->
+<div class="lg:col-span-3 flex flex-col justify-end" id="search-cta-container">
+<button class="w-full h-12 px-space-lg rounded-xl bg-primary-container text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-space-xs shadow-lg shadow-primary-container/20 hover:bg-primary transition-all active:scale-[0.98]" type="submit">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed">search</span>
+<span>Cari Unit Armada</span>
+</button>
+</div>
+</form>
+<!-- Feature Chips Banner Underneath Inputs -->
+<div class="mt-space-lg pt-space-md flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-low/60 -mx-space-md md:-mx-space-xl -mb-space-md md:-mb-space-xl px-space-md md:px-space-xl py-space-md">
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant">
+<span class="inline-flex items-center gap-space-2xs font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px] text-primary-container">sanitizer</span> Jaminan Unit Bersih &amp; Bebas Bau Rokok
+            </span>
+<span class="inline-flex items-center gap-space-2xs font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">security</span> Asuransi All-Risk &amp; Proteksi Bencana
+            </span>
+<span class="inline-flex items-center gap-space-2xs font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span> Tanpa Biaya Tersembunyi
+            </span>
+</div>
+<div class="inline-flex items-center gap-space-xs text-primary-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>42 Unit Ready Hari Ini di Jabodetabek</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Live Search Feedback Floating Notification (Triggered on search) -->
+<div class="hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-40 bg-inverse-surface text-inverse-on-surface px-space-lg py-space-sm rounded-full shadow-2xl items-center gap-space-sm" id="search-feedback">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px] animate-spin">sync</span>
+<span class="font-label-md text-label-md">Menyaring ketersediaan unit untuk jadwal pilihan Anda...</span>
+</div>
+<!-- Featured Fleet Category Showcase -->
+<section class="w-full max-w-[1680px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-3xl" id="armada-section">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm font-semibold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">directions_car</span>
+<span>Armada Pilihan Velocis</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">Koleksi Kendaraan Siap Jalan</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+          Semua unit berumur di bawah 3 tahun, transmisi prima, dan telah disterilisasi menyeluruh sebelum serah terima.
+        </p>
+</div>
+<!-- Filter Category Pills -->
+<div class="flex flex-wrap items-center gap-space-xs overflow-x-auto pb-space-2xs">
+<button class="fleet-filter-btn px-space-md py-space-xs rounded-full font-label-sm text-label-sm font-semibold bg-primary-container text-on-primary shadow-sm transition-all" data-category="all" onclick="filterFleet('all')" type="button">
+          Semua (48)
+        </button>
+<button class="fleet-filter-btn px-space-md py-space-xs rounded-full font-label-sm text-label-sm font-medium bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all" data-category="mpv" onclick="filterFleet('mpv')" type="button">
+          Family MPV (18)
+        </button>
+<button class="fleet-filter-btn px-space-md py-space-xs rounded-full font-label-sm text-label-sm font-medium bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all" data-category="suv" onclick="filterFleet('suv')" type="button">
+          Premium SUV (12)
+        </button>
+<button class="fleet-filter-btn px-space-md py-space-xs rounded-full font-label-sm text-label-sm font-medium bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all" data-category="vip" onclick="filterFleet('vip')" type="button">
+          Luxury VIP (9)
+        </button>
+<button class="fleet-filter-btn px-space-md py-space-xs rounded-full font-label-sm text-label-sm font-medium bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all" data-category="ev" onclick="filterFleet('ev')" type="button">
+          City Car / EV (9)
+        </button>
+</div>
+</div>
+<!-- Vehicles Showcase Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg" id="fleet-card-grid">
+<!-- Card 1: Innova Zenix Hybrid -->
+<article class="fleet-card group flex flex-col bg-surface-container-lowest rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300" data-cat="mpv">
+<div class="relative w-full h-52 overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern Toyota Innova Zenix Hybrid 2024 model in sleek pearl white finish parked outside an executive skyscraper in Jakarta business district, high-end automotive commercial lighting with deep violet and cool daylight reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI3VFH2WPEzzN20kTwW5EcUiCysyafzxqrTxpGRR8X3cx8vHjd0CGi_2jEWbrD6YvXQBUQXiuOgbZOcnzSqwbhZEXteeGjMjYWVPPSHwt1HGOh7FeZ62emYTMIap3E7sxbpMOqEORAEcA9v-DiTHBEGzJDXkwgx4btJOceHzPi4r7IWVyZBlCy59Fatp4J7Pha8u1fQz_kfMsBkCXEJvintzr58AE5PLWrC1BseBS78yYEQJUhpgau"/>
+<div class="absolute top-3 left-3 flex gap-space-2xs">
+<span class="px-space-xs py-space-3xs rounded-md bg-surface-container-lowest/90 backdrop-blur-md font-caption-xs text-caption-xs font-semibold text-primary">Tahun 2024</span>
+<span class="px-space-xs py-space-3xs rounded-md bg-secondary text-on-secondary font-caption-xs text-caption-xs font-semibold">Tersedia</span>
+</div>
+<div class="absolute bottom-3 right-3 px-space-xs py-space-3xs rounded-md bg-surface-container-lowest/90 backdrop-blur-md font-data-mono text-data-mono text-primary font-semibold flex items-center gap-space-3xs">
+<span class="material-symbols-outlined text-[14px] text-tertiary">eco</span> Hybrid
+          </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="font-caption-xs text-caption-xs uppercase tracking-wider text-secondary font-semibold">Family MPV</span>
+<div class="flex items-center gap-space-3xs text-tertiary">
+<span class="material-symbols-outlined text-[16px] text-tertiary fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">4.9</span>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">(128)</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Toyota Innova Zenix Hybrid</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Kabin senyap, suspensi empuk, bahan bakar super hemat 1:21 km/L.</p>
+</div>
+<!-- Specs Matrix -->
+<div class="grid grid-cols-4 gap-space-2xs py-space-xs bg-surface-container-low rounded-xl px-space-xs text-center">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">airline_seat_recline_extra</span>
+<span class="font-caption-xs text-caption-xs text-on-surface font-medium">7 Kursi</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">luggage</span>
+<span class="font-caption-xs text-caption-xs text-on-surface font-medium">3 Koper</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">settings_suggest</span>
+<span class="font-caption-xs text-caption-xs text-on-surface font-medium">Matic CVT</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">local_gas_station</span>
+<span class="font-caption-xs text-caption-xs text-on-surface font-medium">Hybrid</span>
+</div>
+</div>
+<!-- Pricing & Action -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant block">Lepas Kunci:</span>
+<span class="font-headline-lg text-headline-lg text-primary-container font-bold">Rp 650.000</span>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">/ hari</span>
+</div>
+<div class="text-right">
+<span class="font-caption-xs text-caption-xs text-secondary font-medium">+ Rp 200rb/hari (Sopir)</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs mt-space-2xs">
+<button class="w-full py-space-xs rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold text-center hover:bg-primary transition-all" onclick="openCarBooking('Innova Zenix Hybrid', '650000')" type="button">
+                Pesan Sekarang
+              </button>
+<button class="w-full py-space-xs rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium text-center hover:bg-surface-variant transition-all" onclick="openCarModal('innova-zenix')" type="button">
+                Detail Unit
+              </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 2: Toyota Fortuner GR Sport -->
+<article class="fleet-card group flex flex-col bg-surface-container-lowest rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300" data-cat="suv">
+<div class="relative w-full h-52 overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Athletic Toyota Fortuner GR Sport 4x4 in metallic attitude black, studio lighting with dramatic side reflection showcasing muscular SUV lines and 18-inch GR wheels against a premium slate background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjjmT7gJn0tfJPY-LPmeXwXvzAqlIRdwLAP9i1iGksoE9wgVSta8MytJnPC7TMngRkPMPZsUzcxpSIS1ICovBd7wCvAq-bmeJRtXSgny0mMurtukyGZ3PlvAwHaIFdxeh_d47WuEOu5yttvmdNWvbeeVmwgvjyON7CGte35wyPwmceuvC2FhR1i3M9RRYk1mQt7VJlckGrto4kIwEKoWydlWqEn3AYIjSCj6K-IXNHMqaAo9itqSPq"/>
+<div class="absolute top-3 left-3 flex gap-space-2xs">
+<span class="px-space-xs py-space-3xs rounded-md bg-tertiary-fixed text-on-tertiary-fixed font-caption-xs text-caption-xs font-bold shadow-sm">Terlaris</span>
+<span class="px-space-xs py-space-3xs rounded-md bg-surface-container-lowest/90 backdrop-blur-md font-caption-xs text-caption-xs font-semibold text-primary">Tahun 2024</span>
+</div>
+<div class="absolute bottom-3 right-3 px-space-xs py-space-3xs rounded-md bg-surface-container-lowest/90 backdrop-blur-md font-data-mono text-data-mono text-primary font-semibold flex items-center gap-space-3xs">
+<span class="material-symbols-outlined text-[14px] text-secondary">terrain</span> 4x4 Power
+          </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="font-caption-xs text-caption-xs uppercase tracking-wider text-secondary font-semibold">Premium SUV</span>
+<div class="flex items-center gap-space-3xs text-tertiary">
+<span class="material-symbols-outlined text-[16px] text-tertiary fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">4.95</span>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">(94)</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Toyota Fortuner GR Sport 2.8</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Tangguh untuk luar kota, proyek bisnis, maupun rute berbukit.</p>
+</div>
+<!-- Specs Matrix -->
+<div class="grid grid-cols-4 gap-space-2xs py-space-xs bg-surface-container-low rounded-xl px-space-xs text-center">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">airline_seat_recline_extra</span>
+<span class="font-caption-xs text-caption-xs text-on-surface font-medium">7 Kursi</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">luggage</span>
+<span class="font-caption-xs text-caption-xs text-on-surface font-medium">4 Koper</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">settings_suggest</span>
+<span class="font-caption-xs text-caption-xs text-on-surface font-medium">Automatic</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">local_gas_station</span>
+<span class="font-caption-xs text-caption-xs text-on-surface font-medium">Diesel</span>
+</div>
+</div>
+<!-- Pricing & Action -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant block">Mulai dari:</span>
+<span class="font-headline-lg text-headline-lg text-primary-container font-bold">Rp 1.100.000</span>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">/ hari</span>
+</div>
+<div class="text-right">
+<span class="font-caption-xs text-caption-xs text-secondary font-medium">Lepas Kunci / Driver</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs mt-space-2xs">
+<button class="w-full py-space-xs rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold text-center hover:bg-primary transition-all" onclick="openCarBooking('Toyota Fortuner GR Sport', '1100000')" type="button">
+                Pesan Sekarang
+              </button>
+<button class="w-full py-space-xs rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium text-center hover:bg-surface-variant transition-all" onclick="openCarModal('fortuner-gr')" type="button">
+                Detail Unit
+              </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 3: Toyota Alphard Transformer 2.5G -->
+<article class="fleet-card group flex flex-col bg-surface-container-lowest rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300" data-cat="vip">
+<div class="relative w-full h-52 overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxurious Toyota Alphard Transformer 2.5G in premium luxury black parked in front of a 5-star hotel lobby in Mega Kuningan Jakarta, golden evening twilight ambiance, tinted windows and executive chrome front grille" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfoUim-JJWQ3KjWS3mRfSvssc2Qp6Y6LmYhUi4_NE6VmWyCpTAHlNwRF_Mj2ecaTiY6j4_GM33HxPev59m24BheM7MDE2jYy6VpxtTIW2lxKENjUpmMZXk2Z_SaMBMFOrzNfvsA1D4mulDvXipfpXWeNA1zFYj2WSKv_mT62Fx8TR_tEXzQc8rvNow8iQKb016_hBOYo-GhJ74hZS9BjnMmKuPVehJJPALrhwwYfIVjddogV2ZjUuO"/>
+<div class="absolute top-3 left-3 flex gap-space-2xs">
+<span class="px-space-xs py-space-3xs rounded-md bg-primary-fixed text-on-primary-fixed font-caption-xs text-caption-xs font-bold shadow-sm">Executive VIP</span>
+<span class="px-space-xs py-space-3xs rounded-md bg-surface-container-lowest/90 backdrop-blur-md font-caption-xs text-caption-xs font-semibold text-primary">With Driver</span>
+</div>
+<div class="absolute bottom-3 right-3 px-space-xs py-space-3xs rounded-md bg-surface-container-lowest/90 backdrop-blur-md font-data-mono text-data-mono text-primary font-semibold flex items-center gap-space-3xs">
+<span class="material-symbols-outlined text-[14px] text-primary-container">wifi</span> Free Wi-Fi
+          </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="font-caption-xs text-caption-xs uppercase tracking-wider text-secondary font-semibold">Luxury VIP</span>
+<div class="flex items-center gap-space-3xs text-tertiary">
+<span class="material-symbols-outlined text-[16px] text-tertiary fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">5.0</span>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">(210)</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Toyota Alphard 2.5G Luxury</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">6 Captain Seat, Ottoman footrest, mineral water &amp; supir bersetelan jas.</p>
+</div>
+<!-- Specs Matrix -->
+<div class="grid grid-cols-4 gap-space-2xs py-space-xs bg-surface-container-low rounded-xl px-space-xs text-center">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">airline_seat_individual_suite</span>
+<span class="font-caption-xs text-caption-xs text-on-surface font-medium">6 Captain</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">luggage</span>
+<span class="font-caption-xs text-caption-xs text-on-surface font-medium">4 Koper</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">badge</span>
+<span class="font-caption-xs text-caption-xs text-on-surface font-medium">Supir VIP</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">water_drop</span>
+<span class="font-caption-xs text-caption-xs text-on-surface font-medium">Amenities</span>
+</div>
+</div>
+<!-- Pricing & Action -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant block">Paket All-In Supir:</span>
+<span class="font-headline-lg text-headline-lg text-primary-container font-bold">Rp 2.400.000</span>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">/ 12 jam</span>
+</div>
+<div class="text-right">
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">BBM &amp; Tol optional</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs mt-space-2xs">
+<button class="w-full py-space-xs rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold text-center hover:bg-primary transition-all" onclick="openCarBooking('Toyota Alphard 2.5G VIP', '2400000')" type="button">
+                Pesan Sekarang
+              </button>
+<button class="w-full py-space-xs rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium text-center hover:bg-surface-variant transition-all" onclick="openCarModal('alphard-vip')" type="button">
+                Detail Unit
+              </button>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 4: Hyundai Ioniq 5 EV -->
+<article class="fleet-card group flex flex-col bg-surface-container-lowest rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300" data-cat="ev">
+<div class="relative w-full h-52 overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Futuristic Hyundai Ioniq 5 EV in gravity gold matte color parked near an ultra-fast electric vehicle charging hub in Senayan Jakarta, clean architectural geometry, subtle purple neon accents reflected on bodywork" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkxYRY9fqiQIv9TeWKZhuV6QChIzKNostr7Ld728LCAN90__XAGlP9D9SF69zSN5aEsNsM5YtFUDrlCG3aVP453H5gtanlDDocl2n10QxULOOc4H97YsEzVWLSykfCZyNk8eAnEobI-guwMZTZqq1EYk9OxNl7vsjDaiv9gEA4rlWHZUUGZDnc1dSXmPHDa50wObY-H2tYvm9ocF_LDa48zmsK6kjmJJ4cp-p2eP9nE8cQ3Fiu9mEB"/>
+<div class="absolute top-3 left-3 flex gap-space-2xs">
+<span class="px-space-xs py-space-3xs rounded-md bg-secondary-fixed text-on-secondary-fixed font-caption-xs text-caption-xs font-bold shadow-sm">Eco-Friendly</span>
+<span class="px-space-xs py-space-3xs rounded-md bg-surface-container-lowest/90 backdrop-blur-md font-caption-xs text-caption-xs font-semibold text-primary">100% Listrik</span>
+</div>
+<div class="absolute bottom-3 right-3 px-space-xs py-space-3xs rounded-md bg-surface-container-lowest/90 backdrop-blur-md font-data-mono text-data-mono text-primary font-semibold flex items-center gap-space-3xs">
+<span class="material-symbols-outlined text-[14px] text-secondary">ev_station</span> 450 km Range
+          </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="font-caption-xs text-caption-xs uppercase tracking-wider text-secondary font-semibold">City Car / EV</span>
+<div class="flex items-center gap-space-3xs text-tertiary">
+<span class="material-symbols-outlined text-[16px] text-tertiary fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">4.92</span>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">(76)</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Hyundai Ioniq 5 Long Range</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Bebas aturan Ganjil-Genap Jakarta, V2L portable power, akselerasi instan.</p>
+</div>
+<!-- Specs Matrix -->
+<div class="grid grid-cols-4 gap-space-2xs py-space-xs bg-surface-container-low rounded-xl px-space-xs text-center">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">airline_seat_recline_extra</span>
+<span class="font-caption-xs text-caption-xs text-on-surface font-medium">5 Kursi</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">luggage</span>
+<span class="font-caption-xs text-caption-xs text-on-surface font-medium">3 Koper</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">electric_car</span>
+<span class="font-caption-xs text-caption-xs text-on-surface font-medium">Electric</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">traffic</span>
+<span class="font-caption-xs text-caption-xs text-on-surface font-medium">Bebas GaGe</span>
+</div>
+</div>
+<!-- Pricing & Action -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant block">Lepas Kunci:</span>
+<span class="font-headline-lg text-headline-lg text-primary-container font-bold">Rp 950.000</span>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">/ hari</span>
+</div>
+<div class="text-right">
+<span class="font-caption-xs text-caption-xs text-secondary font-medium">Free Charge Card</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs mt-space-2xs">
+<button class="w-full py-space-xs rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold text-center hover:bg-primary transition-all" onclick="openCarBooking('Hyundai Ioniq 5 EV', '950000')" type="button">
+                Pesan Sekarang
+              </button>
+<button class="w-full py-space-xs rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium text-center hover:bg-surface-variant transition-all" onclick="openCarModal('ioniq-ev')" type="button">
+                Detail Unit
+              </button>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- View All Fleet CTA Banner -->
+<div class="mt-space-2xl p-space-lg rounded-2xl bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">garage_home</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">Membutuhkan Tipe Unit Lainnya?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tersedia Avanza, HiAce Premio Luxury 14-Seat, BMW Seri 5, hingga Mercedes-Benz S-Class.</p>
+</div>
+</div>
+<a class="px-space-lg py-space-xs rounded-xl bg-surface-container-lowest text-primary-container font-label-md text-label-md font-semibold hover:bg-primary-container hover:text-on-primary transition-all shadow-sm" href="#">
+        Lihat Seluruh 48 Armada →
+      </a>
+</div>
+</section>
+<!-- Interactive Modal / Slide-over Detail Vehicle Simulation -->
+<dialog class="fixed inset-0 m-auto backdrop:bg-primary/40 backdrop:backdrop-blur-sm rounded-2xl p-0 max-w-2xl w-[92vw] bg-surface-container-lowest shadow-2xl overflow-hidden" id="vehicle-detail-modal">
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[24px]">verified</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface" id="modal-car-title">Detail Spesifikasi Kendaraan</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high" onclick="document.getElementById('vehicle-detail-modal').close()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="w-full h-48 bg-surface-container-low rounded-xl overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="High quality detailed cockpit and luxury dashboard shot of vehicle interior showing infotainment screen and pristine leather stitching with ambient light" id="modal-car-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCfdavMBiD2iHZtRW34wF4nWfNoiPRfUjPkwLZBa3do9A0gNiqqO8XMKl7bOsf-PNcOXY6wMN6hn7TBhbyddFQamHWsBLMVeqhpwaSlWdHTV-fnlIVZrFVm_ji8cUWW6apUgJ6NC1G_RGF3XLTDCLfFSOvO2ct1fZ1vpxEv2SutNeRCTXsiUjcADjfK03NCezwh9h2ARrQ4MPCX1pmfYX1nkrN5aQX49TO4wZYtRt5oN8CtpN2JrnC"/>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm font-body-sm text-body-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<span class="text-on-surface-variant block font-caption-xs text-caption-xs">Transmisi &amp; Mesin</span>
+<span class="font-semibold text-on-surface">Otomatis / Direct Shift</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<span class="text-on-surface-variant block font-caption-xs text-caption-xs">Fitur Keselamatan</span>
+<span class="font-semibold text-on-surface">TSS 3.0 / 7 Airbags</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<span class="text-on-surface-variant block font-caption-xs text-caption-xs">Bahan Bakar</span>
+<span class="font-semibold text-on-surface">Full-to-Full Tank</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low text-on-surface-variant font-body-sm text-body-sm flex flex-col gap-space-2xs">
+<p class="font-semibold text-on-surface">Kelengkapan Standar Velocis:</p>
+<p>• Kotak P3K, Segitiga Pengaman, Alat Pemadam Api Ringan (APAR)</p>
+<p>• Charger mobil multifungsi Type-C &amp; Lightning Fast Charge</p>
+<p>• Pengharum ruangan aroma aromaterapi netral &amp; higienis</p>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-space-xs rounded-lg text-on-surface-variant font-label-md text-label-md" onclick="document.getElementById('vehicle-detail-modal').close()" type="button">Tutup</button>
+<button class="px-space-lg py-space-xs rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold" onclick="alert('Mengarahkan ke alur verifikasi &amp; checkout'); document.getElementById('vehicle-detail-modal').close();" type="button">Lanjut Pemesanan</button>
+</div>
+</div>
+</dialog>
+<!-- Why Choose Velocis (Value Propositions & Layanan) -->
+<section class="w-full bg-surface-container-low/80 py-space-3xl">
+<div class="w-full max-w-[1680px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-space-2xl flex flex-col gap-space-2xs">
+<span class="text-secondary font-label-sm text-label-sm font-semibold uppercase tracking-wider">Standar Layanan Eksekutif</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">Mengapa Ribuan Pelanggan Memilih Velocis Fleet?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Kami memadukan armada prima terawat dengan transparansi total, menjamin perjalanan keluarga maupun mobilitas dinas korporasi Anda berlangsung tanpa rasa cemas.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Value 1 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-2xl shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="w-14 h-14 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[32px]">checklist_rtl</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Kondisi Unit Prima 100%</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Setiap mobil wajib melewati inspeksi 40 titik sebelum diserahkan: rem, ban, AC dingin, aki, dan kelistrikan. Garansi ganti unit jika ada kendala mesin.
+            </p>
+</div>
+<div class="mt-auto pt-space-xs text-primary font-label-sm text-label-sm font-semibold flex items-center gap-space-3xs">
+<span>SOP Standar Agen Resmi</span> →
+          </div>
+</div>
+<!-- Value 2 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-2xl shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[32px]">receipt_long</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Transparansi Harga Penuh</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Bebas biaya tersembunyi. Nilai yang Anda lihat di layar sudah mencakup asuransi dasar all-risk, pajak resmi, serta layanan cuci sterilisasi sebelum pemakaian.
+            </p>
+</div>
+<div class="mt-auto pt-space-xs text-secondary font-label-sm text-label-sm font-semibold flex items-center gap-space-3xs">
+<span>Tanpa Biaya Admin Tambahan</span> →
+          </div>
+</div>
+<!-- Value 3 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-2xl shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="w-14 h-14 rounded-2xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[32px]">document_scanner</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Verifikasi Cepat &amp; Digital</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Tinggalkan birokrasi rumit. Cukup unggah KTP dan SIM via ponsel pintar Anda, sistem verifikasi otomatis kami mengonfirmasi akun dalam 15 menit.
+            </p>
+</div>
+<div class="mt-auto pt-space-xs text-primary font-label-sm text-label-sm font-semibold flex items-center gap-space-3xs">
+<span>Data Terenkripsi 256-bit</span> →
+          </div>
+</div>
+<!-- Value 4 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-2xl shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<div class="w-14 h-14 rounded-2xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[32px]">car_repair</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">24/7 Roadside Assistance</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Tim mekanik darurat dan jaringan mobil derek siaga 24 jam nonstop di seluruh Jabodetabek, Bandung, Surabaya, dan Bali untuk menjamin ketenangan Anda.
+            </p>
+</div>
+<div class="mt-auto pt-space-xs text-tertiary font-label-sm text-label-sm font-semibold flex items-center gap-space-3xs">
+<span>Hotline Siap Sedia</span> →
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Cara Pemesanan Mudah (4 Langkah Cepat) -->
+<section class="w-full max-w-[1680px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-3xl">
+<div class="text-center max-w-xl mx-auto mb-space-2xl flex flex-col gap-space-2xs">
+<span class="text-primary-container font-label-sm text-label-sm font-semibold uppercase tracking-wider">Alur Reservasi Cerdas</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">4 Langkah Cepat Menuju Perjalanan Anda</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Nikmati kemudahan booking kendaraan tanpa perlu datang antre di pool fisik.
+      </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg relative">
+<!-- Step 1 -->
+<div class="flex flex-col gap-space-sm p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm relative">
+<div class="flex items-center justify-between">
+<span class="font-headline-xl text-headline-xl font-bold text-primary-fixed-dim">01</span>
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">directions_car</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Pilih Unit &amp; Jadwal Sewa</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Pilih jenis mobil sesuai kapasitas penumpang, bagasi, serta tanggal durasi yang diinginkan (lepas kunci atau supir).
+        </p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col gap-space-sm p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm relative">
+<div class="flex items-center justify-between">
+<span class="font-headline-xl text-headline-xl font-bold text-secondary-fixed-dim">02</span>
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">id_card</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Unggah Identitas (KTP &amp; SIM)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Foto KTP dan SIM A asli secara langsung. Verifikasi instan dengan sistem keamanan data perbankan yang aman.
+        </p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col gap-space-sm p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm relative">
+<div class="flex items-center justify-between">
+<span class="font-headline-xl text-headline-xl font-bold text-primary-fixed-dim">03</span>
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">payments</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Pembayaran Digital Aman</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Bayar instan via QRIS semua dompet digital, Virtual Account (BCA/Mandiri/BRI), atau Kartu Kredit dengan invoice otomatis.
+        </p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col gap-space-sm p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm relative">
+<div class="flex items-center justify-between">
+<span class="font-headline-xl text-headline-xl font-bold text-tertiary-fixed-dim">04</span>
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[22px]">key_vertical</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Unit Dikirim atau Diambil</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Armada diantar tepat waktu langsung ke rumah, lobi hotel, atau diambil di pool bandara dengan berita acara digital.
+        </p>
+</div>
+</div>
+</section>
+<!-- Interactive Testimonial Section -->
+<section class="w-full bg-surface-container-low/60 py-space-3xl">
+<div class="w-full max-w-[1680px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-2xl">
+<div>
+<span class="text-secondary font-label-sm text-label-sm font-semibold uppercase tracking-wider">Testimoni Pelanggan</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">Ulasan Pengalaman Nyata</h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-headline-lg text-headline-lg text-primary font-bold">4.9 / 5.0</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">dari 3.400+ perjalanan sewa</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Review 1 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-2xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">2 hari yang lalu</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+              "Sangat puas menyewa Alphard untuk tamu direksi dari Singapura. Driver Mas Bambang sangat santun, paham bahasa Inggris, dan tiba 20 menit sebelum jadwal di Bandara Soetta. Mobil wangi dan bersih sekali."
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<div class="w-11 h-11 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-primary">
+              RS
+            </div>
+<div>
+<div class="flex items-center gap-space-3xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">Raditya Santoso</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+</div>
+<p class="font-caption-xs text-caption-xs text-on-surface-variant">Managing Partner, Corporate Law Firm Jakarta</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-2xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">1 minggu yang lalu</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+              "Sewa lepas kunci Innova Zenix Hybrid untuk road trip keluarga keliling Jogja - Solo. Proses verifikasi KTP hanya butuh 10 menit via website. Konsumsi bensin irit luar biasa dan serah terima unit di stasiun sangat lancar!"
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<div class="w-11 h-11 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-secondary">
+              DW
+            </div>
+<div>
+<div class="flex items-center gap-space-3xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">Dinda Wulandari</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+</div>
+<p class="font-caption-xs text-caption-xs text-on-surface-variant">Liburan Keluarga, Bandung</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-2xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant">2 minggu yang lalu</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+              "Kami menggunakan paket fleet korporat Velocis untuk operasional 6 unit Fortuner selama event KTT di Nusa Dua Bali. Respon helpdesk 24 jam sangat solutif ketika ada pergantian jadwal mendadak."
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<div class="w-11 h-11 rounded-full bg-tertiary-fixed flex items-center justify-center font-bold text-on-tertiary-fixed">
+              BP
+            </div>
+<div>
+<div class="flex items-center gap-space-3xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">Bagus Prakoso</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+</div>
+<p class="font-caption-xs text-caption-xs text-on-surface-variant">Operations Head, Tech Enterprise Bali</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mobile App Promo & Discount Banner -->
+<section class="w-full max-w-[1680px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-3xl">
+<div class="relative w-full rounded-3xl bg-primary text-on-primary overflow-hidden p-space-xl md:p-space-3xl shadow-xl">
+<!-- Decorative background waves -->
+<div class="absolute -right-24 -bottom-24 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-12 -top-12 w-64 h-64 rounded-full bg-tertiary-fixed/10 blur-2xl pointer-events-none"></div>
+<div class="relative grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-space-2xs px-space-md py-space-3xs rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold self-start">
+<span class="material-symbols-outlined text-[16px]">local_offer</span>
+<span>Promo Pengguna Baru 2025</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-primary md:text-[36px] md:leading-[44px] font-bold">
+            Diskon 15% Sewa Pertama Kali dengan Kode Kupon Spesial
+          </h2>
+<p class="font-body-lg text-body-lg text-primary-fixed max-w-xl">
+            Masukkan kode kupon <span class="px-space-xs py-space-3xs rounded bg-tertiary-fixed text-on-tertiary-fixed font-data-mono font-bold">VELOCISBARU</span> saat checkout atau tunjukkan saat reservasi via WhatsApp CS resmi kami.
+          </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="px-space-xl py-space-sm rounded-xl bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md font-bold hover:bg-tertiary-fixed-dim transition-all shadow-md flex items-center gap-space-xs" href="https://wa.me/628118356247?text=Halo%20Velocis%20Fleet,%20saya%20ingin%20klaim%20kode%20promo%20VELOCISBARU" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Klaim Promo via WhatsApp</span>
+</a>
+<button class="px-space-lg py-space-sm rounded-xl bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-secondary transition-all" onclick="document.getElementById('booking-form').scrollIntoView({behavior: 'smooth'})" type="button">
+              Gunakan Kupon Sekarang
+            </button>
+</div>
+</div>
+<!-- Visual Badge & Trust Elements -->
+<div class="lg:col-span-5 flex flex-col items-center justify-center">
+<div class="bg-surface-container-lowest text-on-surface p-space-xl rounded-2xl shadow-2xl max-w-sm w-full flex flex-col gap-space-md text-center">
+<div class="w-14 h-14 rounded-full bg-primary-fixed text-primary mx-auto flex items-center justify-center">
+<span class="material-symbols-outlined text-[32px]">redeem</span>
+</div>
+<div>
+<span class="font-caption-xs text-caption-xs text-on-surface-variant uppercase font-semibold">Salin Kupon Diskon</span>
+<div class="flex items-center justify-center gap-space-xs mt-space-2xs bg-surface-container-low p-space-sm rounded-xl">
+<span class="font-data-mono text-data-mono text-primary font-bold text-[18px]">VELOCISBARU</span>
+<button class="p-space-3xs text-secondary hover:text-primary transition-colors" onclick="navigator.clipboard.writeText('VELOCISBARU'); alert('Kode promo disalin ke clipboard!');" title="Salin Kode" type="button">
+<span class="material-symbols-outlined text-[20px]">content_copy</span>
+</button>
+</div>
+</div>
+<p class="font-caption-xs text-caption-xs text-on-surface-variant">
+              *Berlaku untuk rental harian lepas kunci &amp; dengan sopir hingga 31 Desember 2025.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Floating Direct WhatsApp Assistant Hub Button -->
+<aside aria-label="Bantuan Langsung WhatsApp" class="fixed bottom-6 right-6 z-50 flex items-center gap-space-xs">
+<a class="group flex items-center gap-space-xs pl-space-md pr-space-lg py-space-sm rounded-full bg-surface-container-lowest text-primary shadow-2xl hover:shadow-primary/30 transition-all hover:scale-105" href="https://wa.me/628118356247?text=Halo%20Velocis%20Fleet,%20saya%20butuh%20bantuan%20sewa%20mobil" rel="noopener noreferrer" target="_blank">
+<div class="relative w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-on-secondary">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span class="absolute top-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary-fixed animate-ping"></span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-caption-xs text-caption-xs text-on-surface-variant leading-tight">Layanan 24 Jam</span>
+<span class="font-label-sm text-label-sm font-bold text-primary group-hover:text-primary-container transition-colors">Chat CS WhatsApp</span>
+</div>
+</a>
+</aside>
+</div>
+<!-- Inline Interaction Logic (Rental Switcher, Filter, Date Calculator) -->
+<script>
+  function switchRentalMode(mode) {
+    const btnSelf = document.getElementById('tab-self-drive');
+    const btnDriver = document.getElementById('tab-with-driver');
+
+    if (mode === 'self') {
+      btnSelf.className = 'flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg font-label-md text-label-md font-semibold bg-primary-container text-on-primary shadow-md transition-all';
+      btnDriver.className = 'flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface transition-all';
+    } else {
+      btnDriver.className = 'flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg font-label-md text-label-md font-semibold bg-primary-container text-on-primary shadow-md transition-all';
+      btnSelf.className = 'flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface transition-all';
+    }
+  }
+
+  function toggleCustomReturn(isChecked) {
+    const dropoffContainer = document.getElementById('dropoff-loc-container');
+    const searchContainer = document.getElementById('search-cta-container');
+
+    if (isChecked) {
+      dropoffContainer.classList.remove('hidden');
+      dropoffContainer.classList.add('flex');
+      searchContainer.classList.remove('lg:col-span-3');
+      searchContainer.classList.add('lg:col-span-12');
+    } else {
+      dropoffContainer.classList.add('hidden');
+      dropoffContainer.classList.remove('flex');
+      searchContainer.classList.remove('lg:col-span-12');
+      searchContainer.classList.add('lg:col-span-3');
+    }
+  }
+
+  function calculateRentalPeriod() {
+    const startInput = document.getElementById('start-date').value;
+    const endInput = document.getElementById('end-date').value;
+    const badge = document.getElementById('rental-duration-badge');
+
+    if (!startInput || !endInput) return;
+
+    const start = new Date(startInput);
+    const end = new Date(endInput);
+    const diffTime = end - start;
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+    if (diffDays > 0) {
+      badge.innerText = `${diffDays} Hari (${diffDays * 24} Jam)`;
+    } else if (diffDays === 0) {
+      badge.innerText = '1 Hari (24 Jam)';
+    } else {
+      badge.innerText = 'Tanggal tidak valid';
+    }
+  }
+
+  function triggerArmadaSearch() {
+    const feedback = document.getElementById('search-feedback');
+    feedback.classList.remove('hidden');
+    feedback.classList.add('flex');
+
+    setTimeout(() => {
+      feedback.classList.add('hidden');
+      feedback.classList.remove('flex');
+      const target = document.getElementById('armada-section');
+      target.scrollIntoView({ behavior: 'smooth' });
+    }, 900);
+  }
+
+  function filterFleet(category) {
+    const buttons = document.querySelectorAll('.fleet-filter-btn');
+    buttons.forEach(btn => {
+      if (btn.getAttribute('data-category') === category) {
+        btn.className = 'fleet-filter-btn px-space-md py-space-xs rounded-full font-label-sm text-label-sm font-semibold bg-primary-container text-on-primary shadow-sm transition-all';
+      } else {
+        btn.className = 'fleet-filter-btn px-space-md py-space-xs rounded-full font-label-sm text-label-sm font-medium bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all';
+      }
+    });
+
+    const cards = document.querySelectorAll('.fleet-card');
+    cards.forEach(card => {
+      if (category === 'all' || card.getAttribute('data-cat') === category) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+
+  function openCarBooking(carName, price) {
+    const formatted = Number(price).toLocaleString('id-ID');
+    const msg = `Halo Velocis Fleet, saya ingin memesan unit *${carName}* dengan tarif Rp ${formatted}/hari. Mohon info ketersediaan dan prosedur berikutnya.`;
+    window.open(`https://wa.me/628118356247?text=${encodeURIComponent(msg)}`, '_blank');
+  }
+
+  function openCarModal(carKey) {
+    const modal = document.getElementById('vehicle-detail-modal');
+    const title = document.getElementById('modal-car-title');
+
+    const carData = {
+      'innova-zenix': 'Toyota Innova Zenix Hybrid 2024',
+      'fortuner-gr': 'Toyota Fortuner GR Sport 2.8 4x4',
+      'alphard-vip': 'Toyota Alphard Transformer 2.5G VIP',
+      'ioniq-ev': 'Hyundai Ioniq 5 EV Long Range'
+    };
+
+    if (carData[carKey]) {
+      title.innerText = carData[carKey];
+    }
+    modal.showModal();
+  }
+</script></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_12px_rgba(62,15,141,0.04)]"><div class="w-full max-w-[1680px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop pt-space-3xl pb-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #3e0f8d
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XYLtNk5iMxyiEa4Dpp9oHFjtA_WQX01dZIiBUeudsf4MGVNywUKzA8K5gQJ-V9UncnhudnbY8J5E-byLbC4T9CdHOExckb73nKwzkYOFsDOExhsGjXyt5xc5cFd6BV8ESfCDfXHvS23L-fBdrmqOE9KYFSY7D8o_EMo1oIu46_NWsqMsd5dVfRuD6CAr2NcpV3P-z-Z2jLkV1jTkvWslV_yRjY6uv-Ez4D3uPjTFtoFRnqicjOAERmuhY"/><span class="font-headline-lg text-headline-lg text-primary">Velocis Fleet</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Solusi mobilitas korporat dan rental mobil eksekutif modern. Menghadirkan armada prima terawat, supir profesional bersertifikasi, serta teknologi pemesanan instan terintegrasi di seluruh kota metropolitan Indonesia.</p><div class="flex items-center gap-space-sm pt-space-xs"><div class="flex items-center justify-center w-9 h-9 rounded-full bg-surface-container-low text-primary-container"><span class="material-symbols-outlined text-[20px]">support_agent</span></div><div><p class="font-caption-xs text-caption-xs text-on-surface-variant uppercase font-semibold tracking-wider">24/7 Hotline Bebas Pulsa</p><p class="font-label-md text-label-md text-on-surface font-semibold">0800-1-VELOCIS (8356247)</p></div></div></div><div class="flex flex-col gap-space-sm"><h3 class="font-title-md text-title-md text-on-surface">Wilayah Layanan</h3><ul class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-primary-container transition-colors" href="#">Jakarta Raya (Jabodetabek)</a></li><li><a class="hover:text-primary-container transition-colors" href="#">Bali (Denpasar, Kuta, Ubud)</a></li><li><a class="hover:text-primary-container transition-colors" href="#">Surabaya &amp; Sekitarnya</a></li><li><a class="hover:text-primary-container transition-colors" href="#">Bandung &amp; Jawa Barat</a></li><li><a class="hover:text-primary-container transition-colors" href="#">Yogyakarta &amp; Semarang</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-title-md text-title-md text-on-surface">Layanan Mobilitas</h3><ul class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-primary-container transition-colors" href="#">Sewa Lepas Kunci</a></li><li><a class="hover:text-primary-container transition-colors" href="#">Sewa dengan Pengemudi VIP</a></li><li><a class="hover:text-primary-container transition-colors" href="#">Antar-Jemput Bandara</a></li><li><a class="hover:text-primary-container transition-colors" href="#">Fleet Management Korporasi</a></li><li><a class="hover:text-primary-container transition-colors" href="#">Paket Wisata &amp; Event</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-title-md text-title-md text-on-surface">Hubungi Kami</h3><div class="flex flex-col gap-space-xs font-body-md text-body-md text-on-surface-variant"><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">mail</span> fleet@velocismobility.co.id</p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">call</span> +62 21 5088 9000</p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">location_on</span> Menara Prima Lt. 24, Mega Kuningan, Jakarta Selatan</p></div><div class="pt-space-xs"><p class="font-caption-xs text-caption-xs text-on-surface-variant uppercase font-semibold tracking-wider mb-space-xs">Koneksi Sosial</p><div class="flex items-center gap-space-xs"><a class="w-8 h-8 rounded-full bg-surface-container-low hover:bg-primary-container hover:text-on-primary flex items-center justify-center transition-colors text-on-surface-variant" href="#"><span class="material-symbols-outlined text-[18px]">share</span></a><a class="w-8 h-8 rounded-full bg-surface-container-low hover:bg-primary-container hover:text-on-primary flex items-center justify-center transition-colors text-on-surface-variant" href="#"><span class="material-symbols-outlined text-[18px]">public</span></a><a class="w-8 h-8 rounded-full bg-surface-container-low hover:bg-primary-container hover:text-on-primary flex items-center justify-center transition-colors text-on-surface-variant" href="#"><span class="material-symbols-outlined text-[18px]">podcasts</span></a></div></div></div></div><div class="mt-space-2xl pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container-low/60 rounded-xl px-space-lg py-space-md"><div class="flex flex-col sm:flex-row items-center gap-space-md"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Metode Pembayaran Resmi:</span><div class="flex flex-wrap items-center gap-space-xs"><span class="px-space-xs py-space-3xs rounded bg-surface-container-lowest font-data-mono text-data-mono font-semibold text-primary shadow-[0_1px_3px_rgba(62,15,141,0.06)]">QRIS</span><span class="px-space-xs py-space-3xs rounded bg-surface-container-lowest font-data-mono text-data-mono font-semibold text-primary shadow-[0_1px_3px_rgba(62,15,141,0.06)]">BCA Virtual</span><span class="px-space-xs py-space-3xs rounded bg-surface-container-lowest font-data-mono text-data-mono font-semibold text-primary shadow-[0_1px_3px_rgba(62,15,141,0.06)]">Mandiri Bill</span><span class="px-space-xs py-space-3xs rounded bg-surface-container-lowest font-data-mono text-data-mono font-semibold text-primary shadow-[0_1px_3px_rgba(62,15,141,0.06)]">Visa</span><span class="px-space-xs py-space-3xs rounded bg-surface-container-lowest font-data-mono text-data-mono font-semibold text-primary shadow-[0_1px_3px_rgba(62,15,141,0.06)]">Mastercard</span></div></div><div class="flex items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant"><a class="hover:underline" href="#">Syarat &amp; Ketentuan</a><span class="text-outline-variant">•</span><a class="hover:underline" href="#">Kebijakan Privasi</a></div></div><div class="mt-space-lg text-center font-caption-xs text-caption-xs text-on-surface-variant">© 2025 PT Velocis Fleet Mobility Indonesia Tbk. Hak Cipta Dilindungi Undang-Undang.</div></div></footer></body></html>
