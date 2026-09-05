@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Header from './Header';
 import HeroBooking from './HeroBooking';
 import FleetShowcase from './FleetShowcase';
@@ -9,8 +10,9 @@ import PromoBanner from './PromoBanner';
 import Footer from './Footer';
 import VehicleModal from './VehicleModal';
 import WhatsAppFab from './WhatsAppFab';
+import ManajemenArmada from './ManajemenArmada';
 
-export default function App() {
+function HomePage() {
   const [modalCar, setModalCar] = useState(null);
   const [feedback, setFeedback] = useState(false);
 
@@ -34,10 +36,7 @@ export default function App() {
       <Header />
       <main>
         <HeroBooking onSearch={handleSearch} />
-        <FleetShowcase
-          onBook={handleBook}
-          onDetail={(car) => setModalCar(car.key)}
-        />
+        <FleetShowcase onBook={handleBook} onDetail={(car) => setModalCar(car.key)} />
         <ValueProps />
         <HowItWorks />
         <Testimonials />
@@ -58,6 +57,25 @@ export default function App() {
       )}
 
       <VehicleModal carKey={modalCar} onClose={() => setModalCar(null)} />
+
+      <Link
+        to="/manajemen-armada"
+        className="fixed bottom-6 left-6 z-40 px-space-md py-space-sm rounded-full bg-primary-container text-on-primary font-label-md text-label-md font-semibold shadow-2xl hover:bg-primary transition-all flex items-center gap-space-xs"
+      >
+        <span className="material-symbols-outlined text-[18px]">dashboard</span>
+        <span>Manajemen Armada</span>
+      </Link>
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/manajemen-armada" element={<ManajemenArmada />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
